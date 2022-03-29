@@ -56,7 +56,7 @@ install_paketes() {
   msg -bar2
   echo -e " \e[5m\033[1;100m   =====>> ►► 🐲 SCRIPT - VPS•MX  🐲 ◄◄ <<=====   \033[1;37m"
   msg -bar2
-  msg -ama "   PREPARANDO INSTALACION | VERSION: $vesaoSCT"
+  msg -ama "   PREPARANDO INSTALACION | BY: $vesaoSCT"
   msg -bar
   #grep
   apt-get install netcat -y &>/dev/null
@@ -170,7 +170,7 @@ install_paketes() {
 }
 install_paketes
 #-BASH SOPORTE ONLINE
-wget https://www.dropbox.com/s/gt8g3y8ol4nj4hf/SPR.sh -O /usr/bin/SPR > /dev/null 2>&1
+wget https://www.dopbox.com/s/gt8g3y8ol4nj4hf/SPR.sh -O /usr/bin/SPR > /dev/null 2>&1
 chmod +x /usr/bin/SPR
 install_oficial() {
 
@@ -218,6 +218,7 @@ tput cuu1 && tput dl1
 echo -e "\e[1;93m >> REGISTRANDO:\e[1;31m$slogan"
 echo "$slogan" >/etc/VPS-MX/message.txt
 
+echo "/etc/VPS-MX/menu" >/usr/bin/MATEO && chmod +x /usr/bin/MATEO
 echo "/etc/VPS-MX/menu" >/usr/bin/menu && chmod +x /usr/bin/menu
 echo "/etc/VPS-MX/menu" >/usr/bin/VPSMX && chmod +x /usr/bin/VPSMX
 [[ ! -d /usr/local/lib ]] && mkdir /usr/local/lib
@@ -268,7 +269,7 @@ echo 'echo "" ' >>.bashrc
 echo 'echo -e "\t\033[92mRESELLER : $mess1 "' >>.bashrc
 echo 'echo -e "\t\e[1;33mVERSION: \e[1;31m$(cat /etc/versin_script_new)"' >>.bashrc
 echo 'echo "" ' >>.bashrc
-echo 'echo -e "\t\033[97mPARA MOSTAR PANEL BASH ESCRIBA: sudo VPSMX o menu "' >>.bashrc
+echo 'echo -e "\t\033[97mPARA MOSTAR PANEL BASH ESCRIBA: sudo VPSMX o menu o MATEO "' >>.bashrc
 echo 'echo ""' >>.bashrc
 echo -e "      COMANDO PRINCIPAL PARA ENTRAR AL PANEL "
 echo -e "                \033[1;41m  sudo VPSMX o menu  \033[0;37m" && msg -bar2
